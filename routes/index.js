@@ -165,7 +165,7 @@ router.post('/new2',(req,res) => {
     });
 
 
-    fetch("http://www.primo.com.co/Service",{
+    fetch("http://www.primo.com.co/Servicio",{
         method: 'POST',
         body : data,
         headers : {"Content-Type" : "application/json; charset=UTF-8"}
