@@ -4,353 +4,258 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>Bienvenido a Primo</title>
+    <title>Primo</title>
     <style>
-        .usuario{
-           background-color: black;
-            /*width: 50%;
-            height: 100%;*/
-        }
-        .cliente{
-            background-color: black;
-            /*width: 50%;
-            height: 100%;*/
-        }
-        /*.container{
-            display: flex;
-            height: 100%;
-        }*/
-        html, body {
-            height: 100%;
-            margin: 0px;
-            background-color: black;
-        }
-        .recuadroverde{
-            border: 5px solid #58D68D ;
-          
-            color: #58D68D  ;
-            padding: 7.2rem 3rem;
-            /*line-height: 200px;*/
-            /*height:320px; /* or whatever width you want. */
-            /*max-height:320px; /* or whatever width you want. */
-            /*display: inline-block;*/
-            min-height: 330px;
-            max-height: 330px;
-        }
-        .recuadrorojo{
-            border: 5px solid #F06292;
-            padding: 7.2rem 3rem;
-            /*line-height: 200px;*/
-            /*height:320px; /* or whatever width you want. */
-            /*max-height:320px; /* or whatever width you want. */
-            /*display: inline-block;*/
-            color: #F06292;
-            min-height: 330px;
-            max-height: 330px;
-        }
-        .cuadroverde{
-            background-color:#58D68D ;
-            margin: 5px;
-            padding: 15px;
-        }
-        .textomedio{
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: bolder;
-            
-            font-style: oblique;
-            letter-spacing: 4px;
-            display: inline-block;
-            font-size: 1.75rem;
-            line-height: 1;
-        }
-        .textogrande{
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-weight: bolder;
-            color: white;
-            font-style: oblique;
-            letter-spacing: 4px;
-            display: inline-block;
-            font-size: 5rem;
-        }
-        .cuadrorojo{
-            background-color:#F06292 ;
-            margin: 5px;
-            padding: 15px;
-            color: white;
-        }
-        .links{
+        .contenedor{
+            margin: 0 auto;
             padding: 5px;
-            width: 100px;
+            width:95%;
         }
-        .recuadrodoble{
-            /*max-width: 500px;*/
-            padding: 1rem;
-            position: relative;
-            background: linear-gradient(to right,#F06292, #58D68D);
-            padding: 3px;
+        .linkuser{
+           width: 20%;
+           position:absolute;
+           top:18vw;
+           left: 10vw;
         }
-        .modulo{
-            background:black;
-  color: white;
-  padding: 2rem;
+        .linkwhastapp{
+            width: 13%;
+            position:absolute;
+            top:15vw;
+            left: 10vw;
+        }
+        .linkinsta{
+            width: 12%;
+            position:absolute;
+            top:15vw;
+            left: 30vw;
+        }
+        .linkmail{
+            width: 13%;
+            position:absolute;
+            top:14vw;
+            left: 50vw;
+        }
+        .linkface{
+            width: 10%;
+            position:absolute;
+            top:15vw;
+            left: 70vw;
         }
     </style>
 </head>
-<body>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-sm-12 pb-5">
-                <img  src="/img/LOGOPRIMONEGRO.png" width="30%"/>
-            </div>
-            <br>
-            <div class="col-sm-6 col-lg usuario">
-                <div class="recuadroverde">
-                    <div> 
-                    <span class="textomedio"> DUEÑO DE VEHICULO</span>
-                    </div>
-                </div>
-                <br>
-                <div class="pt-5 pb-5">
-                    <img src="/img/autoblanco2.png" width="75%" />
-                </div>
-                
-                <br>
-                <br>
-                <div class="cuadroverde">
-                    <span class="textomedio">Sigues perdiendo el tiempo buscando a donde llevar tu vehiculo</span>
-                </div>
-                <div class="pt-5 pb-5">
-                <img src="/img/billetera.png" width="50%"/>
-                </div>  
-                <br>
-                <br>
-                <span style="color: #58D68D;" class="textomedio">¿No tienes claro cuanto dinero gastas en tu vehiculo</span>
-                <br>
-                <br>
-                <div class="cuadroverde">
-                    <p class="textomedio">Encontramos el servicio que requieras a tu medida para que tu solo decidas.</p>
-                    <p class="textomedio">Te ayudamos registrar los datos para que sepas cuanto gastas.</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg cliente">
-                <div class="recuadrorojo">
-                    <span class="textomedio"> EMPRESA DEL SECTOR AUTOMOTRIZ</span>
-                </div>
-                <br>
-                <br>
-                <div class="cuadrorojo">
-                    <span class="textomedio">AYUDANOS A MEDIR LA EXPERIENCIA DE TUS CLIENTES </span>
-                    <br>
-                    <br>
-                    <div style="display:flex;">
-                        <div><img src="/img/barras2.png"  class="img-fluid" style="max-width: 100%; height: auto;"/></div>
-                        <div><img src="/img/idea2.png"  class="img-fluid"/></div>
-                        
-                    </div>
-                    <br>
-                    <br>
-                    <span class="textomedio">Y VALIDAR NUEVAS IDEAS PARA TU NEGOCIO</span>
-                </div>
-                <br>
-                <div>
-                    <img src="/img/qr-code.png" style="background-color: white;"/>
-                </div>
-                <br>
-                <br>
-                <div style="color: white;">
-                    <span class="textomedio">Facilitamos que tus servicios sean conocidos por mas clientes potenciales</span>
-                </div>
-                <br>
-                <div style="color: white;">
-                    <span class="textomedio"> Haz click en la imagen y registrate!</span>
-                    <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><img src="/img/image.png" /></a>
-                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open modal for @mdo</button> -->
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="col-sm-12 pt-5" >
-                <span class="textogrande">Gratis..!</span>  
-            </div>
-            <div class="col-sm-12 recuadrodoble">
-                <div class="modulo">
-                <img src="/img/faceblanco.png" class="links"/>
-                <img src="/img/instablanco.png" class="links"/>
-                <img src="/img/mailblanco.png " class="links"/>
-                <img src="/img/whastappblanco.png" class="links"/>
-            </div>
-            </div>
+<body style="background: linear-gradient(to right,#CF6FE8, #4366F3 );">
+    <div class="contenedor" >
+        <div style="width: 100%;">
+            <img src="/img/1.png" alt="" class="img-fluid">
         </div>
-        <!-- div de formulario -->
-        <br>
-        <br>
-        <br>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Formulario de Registro</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body" style="background-color: black;">
-                    <!-- <div style="border: 5px solid white; padding: 15px;">-->
-                        <form action="/new2" method="POST">
-                            <div class="form-group">
-                                <label for="NomEmpresa" style="color: white;" >Nombre Empresa</label>
-                                <input  type="text" 
-                                        name="NomEmpresa" 
-                                        class="form-control" 
-                                        placeholder="Nombre Empresa" 
-                                        pattern="^([- \w\d\u00c0-\u024f]+)$" 
-                                        required="required"
-                                        title="No puede tener ">
-                            </div>
-                            <div class="form-group">
-                                <label for="DirEmpresa" style="color: white;">Dirección</label>
-                                <input type="text" name="DirEmpresa" class="form-control" placeholder="Dirección" required="required">
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="Ciudad" style="color: white;">Ciudad</label>
-                                    <input type="text" name="Ciudad" class="form-control" placeholder="Ciudad" required="required">
-                                </div>
-                                <div class="form-group col-md-6" style="color: white;">
-                                    <fieldset class="form-group">
-                                        <legend class="col-form-label">Sucursales</legend>
-                                        <div class="row" style="text-align: center;">
-                                            <div class="col-sm-6">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="gridRadios" id="rdSucursalSi" value="S" checked>
-                                                    <label class="form-check-label" for="rdSucursalSi">
-                                                    Si
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="gridRadios" id="rdSucursalNo" value="N">
-                                                    <label class="form-check-label" for="rdSucursalNo">
-                                                    No
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </fieldset>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="Contacto" style="color: white;">Contacto</label>
-                                    <input type="text" name="Contacto" placeholder="Contacto" class="form-control" required="required">
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="Celular" style="color: white;">Celular</label>
-                                    <input type="text" name="Celular" placeholder="Celular" class="form-control" required="required"
-                                    pattern="[0-9]{10}" 
-                                    >
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="Email" style="color: white;">Email</label>
-                                    <input type="text" name="Email" placeholder="Email" class="form-control"
-                                            pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" 
-                                            required="required">
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="Annos" style="color: white;">Años Experiencia</label>
-                                    <input type="text" name="Annos" placeholder="Años Experiencia" class="form-control" required="required"
-                                    pattern="[0-9]">
-                                </div>
-                                <div class="form-group col-sm-12">
-                                    <label style="color: white;">Servicios Ofrecidos</label>
-                                    <div class="row">
-                                        <div class="col-sm-3"></div>
-                                        <div class="form-group col-sm-3" style="color: white; text-align: start;">
-                                            <input type="checkbox" name="iServicioGeneral" class="form-check-input" > 
-                                            <label class="form-check-label" for="iServicioGeneral">
-                                                Servicios Generales
-                                            </label>
-                                            <br>
-                                            <input type="checkbox" name="iLatoneria" class="form-check-input">
-                                            <label class="form-check-label" for="iServicioGeneral">
-                                                Latoneria y Pintura
-                                            </label>
-                                            <br>
-                                            <input type="checkbox" name="iRevision" class="form-check-input">
-                                            <label class="form-check-label" for="iRevision">
-                                                Revisión Especializada
-                                            </label>
-                                            <br>
-                                            <input type="checkbox" name="iReparaciones" class="form-check-input">
-                                            <label class="form-check-label" for="iReparaciones">
-                                                Reparaciones Menores
-                                            </label>
-                                            <br>
-                                            <input type="checkbox" name="iReparacionesMayores" class="form-check-input">
-                                            <label class="form-check-label" for="iReparacionesMayores">
-                                                Reparaciones Mayores
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-sm-3" style="color: white; text-align: start;">
-                                            <input type="checkbox" name="iCambioLlantas" class="form-check-input">
-                                            <label class="form-check-label" for="iCambioLlantas">
-                                                Cambio de Llantas
-                                            </label>
-                                            <br>
-                                            <input type="checkbox" name="iRectificacion" class="form-check-input">
-                                            <label class="form-check-label" for="iRectificacion">
-                                                Rectificación
-                                            </label>
-                                            <br>
-                                            <input type="checkbox" name="iPersonalizacion" class="form-check-input">
-                                            <label class="form-check-label" for="iPersonalizacion">
-                                                Personalización
-                                            </label>
-                                            <br>
-                                            <input type="checkbox" name="iLavado" class="form-check-input">
-                                            <label class="form-check-label" for="iLavado">
-                                                Lavado
-                                            </label>
-                                            <br>
-                                            <input type="checkbox" name="iGrua" class="form-check-input">
-                                            <label class="form-check-label" for="iGrua">
-                                                Grúas
-                                            </label>
-                                            <br>
-                                            <input type="checkbox" name="iElectricidad" class="form-check-input">
-                                            <label class="form-check-label" for="iElectricidad">
-                                                Electricidad
-                                            </label>
-                                            <br>
-                                            <input type="checkbox" name="iOtros" class="form-check-input">
-                                            <label class="form-check-label" for="iOtros">
-                                                Otros
-                                            </label>
-                                        </div>
-                                        <div class="col-sm-3"></div>
-                                        <div class="col-sm 12">
-                                            <button class="btn btn-success">Guardar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    <!-- </div> -->
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    
-                  </div>
-                </div>
-            </div>
+        <div style="width: 100%;">
+            <img src="/img/2.png" alt="" class="img-fluid">
         </div>
+        <div style="width: 100%;">
+            <img src="/img/3.png" alt="" class="img-fluid">
+        </div>
+        <div style="width: 100%; position: relative;">
+            <img src="/img/5.png" alt="" class="img-fluid">
+            <img src="/img/icono-02.png" alt="" class="linkuser">
+        </div>
+        <div style="width: 100%;">
+            <img src="/img/6.png" alt="" class="img-fluid">
+        </div>  
+        <div style="width: 100%; position: relative;">
+            <img src="/img/8.png" alt="" class="img-fluid">
+            <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">
+                <img src="/img/icono-01.png" alt="" class="linkuser">
+            </a>
+        </div>       
+        <div style="width: 100%; position: relative;">
+            <img src="/img/10.png" alt="" class="img-fluid">
+            <a href="https://wa.me/573173678912/?text=Mensaje de primo.com"> <img src="/img/whatsapp_PNG20.png" alt="" class="linkwhastapp"></a>
+            <a href="https://instagram.com/primo__oficial?igshid=y64r5pn3irp6"> <img src="/img/insta.png" alt="" class="linkinsta"></a>
+            <a href="mailto:servicio@primo.com.co"><img src="/img/mail2.png" alt="" class="linkmail"></a>
+            <a href="https://www.facebook.com/primo.oficial.col">x<img src="/img/face.png" alt="" class="linkface"></a>
+        </div>
+       
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <!-- div de formulario -->
+      <br>
+      <br>
+      <br>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Formulario de Registro</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="background-color: #4366F3;">
+                  <!-- <div style="border: 5px solid white; padding: 15px;">-->
+                      <form action="/new2" method="POST">
+                          <div class="form-group">
+                              <label for="NomEmpresa" style="color: white;" >Nombre Empresa</label>
+                              <input  type="text" 
+                                      name="NomEmpresa" 
+                                      class="form-control" 
+                                      placeholder="Nombre Empresa" 
+                                      pattern="^([- \w\d\u00c0-\u024f]+)$" 
+                                      required="required"
+                                      title="No puede tener ">
+                          </div>
+                          <div class="form-group">
+                              <label for="DirEmpresa" style="color: white;">Dirección</label>
+                              <input type="text" name="DirEmpresa" class="form-control" placeholder="Dirección" required="required">
+                          </div>
+                          <div class="form-row">
+                              <div class="form-group col-md-6">
+                                  <label for="Ciudad" style="color: white;">Ciudad</label>
+                                  <input type="text" name="Ciudad" class="form-control" placeholder="Ciudad" required="required">
+                              </div>
+                              <div class="form-group col-md-6" style="color: white;">
+                                  <fieldset class="form-group">
+                                      <legend class="col-form-label">Sucursales</legend>
+                                      <div class="row" style="text-align: center;">
+                                          <div class="col-sm-6">
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="gridRadios" id="rdSucursalSi" value="S" checked>
+                                                  <label class="form-check-label" for="rdSucursalSi">
+                                                  Si
+                                                  </label>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-6">
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="gridRadios" id="rdSucursalNo" value="N">
+                                                  <label class="form-check-label" for="rdSucursalNo">
+                                                  No
+                                                  </label>
+                                              </div>
+                                          </div>
+                                      </div>
+                              </fieldset>
+                              </div>
+                              <div class="form-group col-sm-6">
+                                  <label for="Contacto" style="color: white;">Contacto</label>
+                                  <input type="text" name="Contacto" placeholder="Contacto" class="form-control" required="required">
+                              </div>
+                              <div class="form-group col-sm-6">
+                                  <label for="Celular" style="color: white;">Celular</label>
+                                  <input type="text" name="Celular" placeholder="Celular" class="form-control" required="required"
+                                  pattern="[0-9]{10}" 
+                                  >
+                              </div>
+                              <div class="col-sm-6">
+                                  <label for="Email" style="color: white;">Email</label>
+                                  <input type="text" name="Email" placeholder="Email" class="form-control"
+                                          pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" 
+                                          required="required">
+                              </div>
+                              <div class="col-sm-6">
+                                  <label for="Annos" style="color: white;">Años Experiencia</label>
+                                  <input type="text" name="Annos" placeholder="Años Experiencia" class="form-control" required="required"
+                                  pattern="[0-9]">
+                              </div>
+                            </br>
+                              <div class="form-group col-sm-12">
+                                  <label style="color: white;">Servicios Ofrecidos</label>
+                                  <div class="row">
+                                      <div class="col-sm-3"></div>
+                                      <div class="form-group col-sm-3" style="color: white; text-align: start;">
+                                          <input type="checkbox" name="iServicioGeneral" class="form-check-input" > 
+                                          <label class="form-check-label" for="iServicioGeneral">
+                                              Servicios Generales
+                                          </label>
+                                          <br>
+                                          <input type="checkbox" name="iLatoneria" class="form-check-input">
+                                          <label class="form-check-label" for="iServicioGeneral">
+                                              Latoneria y Pintura
+                                          </label>
+                                          <br>
+                                          <input type="checkbox" name="iRevision" class="form-check-input">
+                                          <label class="form-check-label" for="iRevision">
+                                              Revisión Especializada
+                                          </label>
+                                          <br>
+                                          <input type="checkbox" name="iReparaciones" class="form-check-input">
+                                          <label class="form-check-label" for="iReparaciones">
+                                              Reparaciones Menores
+                                          </label>
+                                          <br>
+                                          <input type="checkbox" name="iReparacionesMayores" class="form-check-input">
+                                          <label class="form-check-label" for="iReparacionesMayores">
+                                              Reparaciones Mayores
+                                          </label>
+                                      </div>
+                                      <div class="form-group col-sm-3" style="color: white; text-align: start;">
+                                          <input type="checkbox" name="iCambioLlantas" class="form-check-input">
+                                          <label class="form-check-label" for="iCambioLlantas">
+                                              Cambio de Llantas
+                                          </label>
+                                          <br>
+                                          <input type="checkbox" name="iRectificacion" class="form-check-input">
+                                          <label class="form-check-label" for="iRectificacion">
+                                              Rectificación
+                                          </label>
+                                          <br>
+                                          <input type="checkbox" name="iPersonalizacion" class="form-check-input">
+                                          <label class="form-check-label" for="iPersonalizacion">
+                                              Personalización
+                                          </label>
+                                          <br>
+                                          <input type="checkbox" name="iLavado" class="form-check-input">
+                                          <label class="form-check-label" for="iLavado">
+                                              Lavado
+                                          </label>
+                                          <br>
+                                          <input type="checkbox" name="iGrua" class="form-check-input">
+                                          <label class="form-check-label" for="iGrua">
+                                              Grúas
+                                          </label>
+                                          <br>
+                                          <input type="checkbox" name="iElectricidad" class="form-check-input">
+                                          <label class="form-check-label" for="iElectricidad">
+                                              Electricidad
+                                          </label>
+                                          <br>
+                                          <input type="checkbox" name="iOtros" class="form-check-input">
+                                          <label class="form-check-label" for="iOtros">
+                                              Otros
+                                          </label>
+                                      </div>
+                                      <div class="col-sm-3"></div>
+                                      <div class="col-sm 12">
+                                          <button class="btn btn-success">Guardar</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                  <!-- </div> -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-           
-
-    
+ <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5ec5d87b8ee2956d73a324a1/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 </html>
