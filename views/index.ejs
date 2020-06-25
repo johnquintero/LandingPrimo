@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>Primo</title>
     <style>
-        .contenedor{
+        .contenedor {
             margin: 0 auto;
             padding: 5px;
-            width:95%;
+            width: 95%;
         }
-        .linkuser{
-           width: 20%;
-           position:absolute;
-           top:18vw;
-           left: 10vw;
-        }
-        .linkwhastapp{
-            width: 13%;
-            position:absolute;
-            top:15vw;
+
+        .linkuser {
+            width: 20%;
+            position: absolute;
+            top: 18vw;
             left: 10vw;
         }
-        .linkinsta{
+
+        .linkwhastapp {
+            width: 13%;
+            position: absolute;
+            top: 15vw;
+            left: 10vw;
+        }
+
+        .linkinsta {
             width: 12%;
-            position:absolute;
-            top:15vw;
+            position: absolute;
+            top: 15vw;
             left: 30vw;
         }
-        .linkmail{
+
+        .linkmail {
             width: 13%;
-            position:absolute;
-            top:14vw;
+            position: absolute;
+            top: 14vw;
             left: 50vw;
         }
-        .linkface{
+
+        .linkface {
             width: 10%;
-            position:absolute;
-            top:15vw;
+            position: absolute;
+            top: 15vw;
             left: 70vw;
         }
     </style>
 </head>
+
 <body style="background: linear-gradient(to right,#CF6FE8, #4366F3 );">
-    <div class="contenedor" >
+    <div class="contenedor">
         <div style="width: 100%;">
             <img src="/img/1.png" alt="" class="img-fluid">
         </div>
@@ -56,154 +63,332 @@
         </div>
         <div style="width: 100%; position: relative;">
             <img src="/img/5.png" alt="" class="img-fluid">
-            <img src="/img/icono-02.png" alt="" class="linkuser">
+            <a href="https://wa.me/573173678912/?text=Mensaje de primo.com.co">
+            <img src="/img/icono-02.png" alt="" class="linkuser"></a>
         </div>
         <div style="width: 100%;">
             <img src="/img/6.png" alt="" class="img-fluid">
-        </div>  
+        </div>
         <div style="width: 100%; position: relative;">
             <img src="/img/8.png" alt="" class="img-fluid">
             <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                 <img src="/img/icono-01.png" alt="" class="linkuser">
             </a>
-        </div>       
+        </div>
         <div style="width: 100%; position: relative;">
             <img src="/img/10.png" alt="" class="img-fluid">
-            <a href="https://wa.me/573173678912/?text=Mensaje de primo.com"> <img src="/img/whatsapp_PNG20.png" alt="" class="linkwhastapp"></a>
-            <a href="https://instagram.com/primo__oficial?igshid=y64r5pn3irp6"> <img src="/img/insta.png" alt="" class="linkinsta"></a>
+            <a href="https://wa.me/573173678912/?text=Mensaje de primo.com.co"> <img src="/img/whatsapp_PNG20.png" alt=""
+                    class="linkwhastapp"></a>
+            <a href="https://instagram.com/primo__oficial?igshid=y64r5pn3irp6"> <img src="/img/insta.png" alt=""
+                    class="linkinsta"></a>
             <a href="mailto:servicio@primo.com.co"><img src="/img/mail2.png" alt="" class="linkmail"></a>
-            <a href="https://www.facebook.com/primo.oficial.col">x<img src="/img/face.png" alt="" class="linkface"></a>
+            <a href="https://www.facebook.com/primo.oficial.col"><img src="/img/face.png" alt="" class="linkface"></a>
         </div>
-       
+
     </div>
-      <!-- div de formulario -->
-      <br>
-      <br>
-      <br>
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
+    <!-- div de formulario -->
+    <br>
+    <br>
+    <br>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Formulario de Registro</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                    <h5 class="modal-title" id="exampleModalLabel">Formulario de Registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body" style="background-color: #4366F3;">
-                  <!-- <div style="border: 5px solid white; padding: 15px;">-->
-                      <form action="/new2" method="POST">
-                          <div class="form-group">
-                              <label for="NomEmpresa" style="color: white;" >Nombre Empresa</label>
-                              <input  type="text" 
-                                      name="NomEmpresa" 
-                                      class="form-control" 
-                                      placeholder="Nombre Empresa" 
-                                      pattern="^([- \w\d\u00c0-\u024f]+)$" 
-                                      required="required"
-                                      title="No puede tener ">
-                          </div>
-                          <div class="form-group">
-                              <label for="DirEmpresa" style="color: white;">Dirección</label>
-                              <input type="text" name="DirEmpresa" class="form-control" placeholder="Dirección" required="required">
-                          </div>
-                          <div class="form-row">
-                              <div class="form-group col-md-6">
-                                  <label for="Ciudad" style="color: white;">Ciudad</label>
-                                  <input type="text" name="Ciudad" class="form-control" placeholder="Ciudad" required="required">
-                              </div>
-                              <div class="form-group col-md-6" style="color: white;">
-                                  <fieldset class="form-group">
-                                      <legend class="col-form-label">Sucursales</legend>
-                                      <div class="row" style="text-align: center;">
-                                          <div class="col-sm-6">
-                                              <div class="form-check">
-                                                  <input class="form-check-input" type="radio" name="gridRadios" id="rdSucursalSi" value="S" checked>
-                                                  <label class="form-check-label" for="rdSucursalSi">
-                                                  Si
-                                                  </label>
-                                              </div>
-                                          </div>
-                                          <div class="col-sm-6">
-                                              <div class="form-check">
-                                                  <input class="form-check-input" type="radio" name="gridRadios" id="rdSucursalNo" value="N">
-                                                  <label class="form-check-label" for="rdSucursalNo">
-                                                  No
-                                                  </label>
-                                              </div>
-                                          </div>
-                                      </div>
-                              </fieldset>
-                              </div>
-                              <div class="form-group col-sm-6">
-                                  <label for="Contacto" style="color: white;">Contacto</label>
-                                  <input type="text" name="Contacto" placeholder="Contacto" class="form-control" required="required">
-                              </div>
-                              <div class="form-group col-sm-6">
-                                  <label for="Celular" style="color: white;">Celular</label>
-                                  <input type="text" name="Celular" placeholder="Celular" class="form-control" required="required"
-                                  pattern="[0-9]{10}" 
-                                  >
-                              </div>
-                              <div class="col-sm-6">
-                                  <label for="Email" style="color: white;">Email</label>
-                                  <input type="text" name="Email" placeholder="Email" class="form-control"
-                                          pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" 
-                                          required="required">
-                              </div>
-                              <div class="col-sm-6">
-                                  <label for="Annos" style="color: white;">Años Experiencia</label>
-                                  <input type="text" name="Annos" placeholder="Años Experiencia" class="form-control" required="required"
-                                  pattern="[0-9]">
-                              </div>
-                                </br>
-                                <div class="form-group col-sm-12">
-                                  <label style="color: white;">¿Que servicios ofreces?</label>
-                                  </br>
-                                  <div class="row">
-                                        <div class="form-group col-12" style="color: white; text-align: start;">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <input type="checkbox" name="iAlineacion" class="form-check-input" > 
-                                                    <label class="form-check-label" for="iAlineacion">
-                                                        Alineación y Balanceo
-                                                    </label>
-                                                </div>
+                    <!-- <div style="border: 5px solid white; padding: 15px;">-->
+                    <form action="/new2" method="POST">
+                        <div class="form-group">
+                            <label for="NomEmpresa" style="color: white;">Nombre Empresa</label>
+                            <input type="text" name="NomEmpresa" class="form-control" placeholder="Nombre Empresa"
+                                pattern="^([- \w\d\u00c0-\u024f]+)$" required="required" title="No puede tener ">
+                        </div>
+                        <div class="form-group">
+                            <label for="DirEmpresa" style="color: white;">Dirección</label>
+                            <input type="text" name="DirEmpresa" class="form-control" placeholder="Dirección"
+                                required="required">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="Ciudad" style="color: white;">Ciudad</label>
+                                <input type="text" name="Ciudad" class="form-control" placeholder="Ciudad"
+                                    required="required">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="Localidad" style="color: white;">Localidad</label>
+                                <input type="text" name="Localidad" class="form-control" placeholder="Localidad"
+                                    required="required">
+                            </div>
+                            <div class="form-group col-md-6" style="color: white;">
+                                <fieldset class="form-group">
+                                    <legend class="col-form-label">Sucursales</legend>
+                                    <div class="row" style="text-align: center;">
+                                        <div class="col-sm-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios"
+                                                    id="rdSucursalSi" value="S" checked>
+                                                <label class="form-check-label" for="rdSucursalSi">
+                                                    Si
+                                                </label>
                                             </div>
-                                        </div>           
-                                      <div class="col-sm-3"></div>
-                                      <div class="col-sm 12">
-                                          <button class="btn btn-success">Guardar</button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </form>
-                  <!-- </div> -->
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="gridRadios"
+                                                    id="rdSucursalNo" value="N">
+                                                <label class="form-check-label" for="rdSucursalNo">
+                                                    No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="Contacto" style="color: white;">Contacto</label>
+                                <input type="text" name="Contacto" placeholder="Contacto" class="form-control"
+                                    required="required">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="Celular" style="color: white;">Celular</label>
+                                <input type="text" name="Celular" placeholder="Celular" class="form-control"
+                                    required="required" pattern="[0-9]{10}">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="Email" style="color: white;">Email</label>
+                                <input type="text" name="Email" placeholder="Email" class="form-control"
+                                    pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$"
+                                    required="required">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="Annos" style="color: white;">Años Experiencia</label>
+                                <input type="text" name="Annos" placeholder="Años Experiencia" class="form-control"
+                                    required="required" pattern="[0-9]">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="marca" style="color: white;">¿Con que marcas trabajas?</label>
+                                <select class="form-control" id="marca" name="marca">
+                                    <option name="" value="0" selected>Seleccione</option>
+                                    <option name="multimarca" value="multimarca" >MULTIMARCA</option>
+                                    <option name="audi" value="audi">Audi</option>
+                                    <option name="baic" value="baic">Baic</option>
+                                    <option name="brilliance" value="brilliance">Brilliance</option>
+                                    <option name="byd" value="byd">BYD</option>
+                                    <option name="bmw" value="bmw">BMW</option>
+                                    <option name="changan" value="changan">Changan</option>
+                                    <option name="changhe" value="changhe">Changhe</option>
+                                    <option name="chery" value="chery">Chery</option>
+                                    <option name="chevrolet" value="chevrolet">Chevrolet</option>
+                                    <option name="chrysler" value="chrysler">Chrysler</option>
+                                    <option name="citroen" value="citroen">Citroen</option>
+                                    <option name="daihatsu" value="daihatsu">Daihatsu</option>
+                                    <option name="dfsk" value="dfsk">DFSK</option>
+                                    <option name="dodge" value="dodge">Dodge</option>
+                                    <option name="dongfeng" value="dongfeng">Dongfeng</option>
+                                    <option name="faw" value="faw">Faw</option>
+                                    <option name="ferrari" value="ferrari">Ferrari</option>
+                                    <option name="fiat" value="fiat">Fiat</option>
+                                    <option name="ford" value="ford">Ford</option>
+                                    <option name="foton" value="foton">Foton</option>
+                                    <option name="gacgonow" value="gacgonow">GacGonow</option>
+                                    <option name="greatwall" value="greatwall">Great Wall</option>
+                                    <option name="haval" value="haval">Haval</option>
+                                    <option name="higer" value="higer">Higer</option>
+                                    <option name="honda" value="honda">Honda</option>
+                                    <option name="hyundai" value="hyundai">Hyundai</option>
+                                    <option name="isuzu" value="isuzu">Isuzu</option>
+                                    <option name="iveco" value="iveco">Iveco</option>
+                                    <option name="jac" value="jac">Jac</option>
+                                    <option name="jaguar" value="jaguar">Jaguar</option>
+                                    <option name="jeep" value="jeep">Jeep</option>
+                                    <option name="jinbei" value="jinbei">Jinbei</option>
+                                    <option name="jmc" value="jmc">JMC</option>
+                                    <option name="joylong" value="joylong">Joylong</option>
+                                    <option name="kia" value="kia">Kia</option>
+                                    <option name="kenbo" value="kenbo">Kenbo</option>
+                                    <option name="landrover" value="landrover">Land Rover</option>
+                                    <option name="lexus" value="lexus">Lexus</option>
+                                    <option name="lifan" value="lifan">Lifan</option>
+                                    <option name="mahindra" value="mahindra">Mahindra</option>
+                                    <option name="maserati" value="maserati">Maserati</option>
+                                    <option name="mazda" value="mazda">Mazda</option>
+                                    <option name="mercedes" value="mercedes">Mercedes Benz</option>
+                                    <option name="mg" value="mg">MG</option>
+                                    <option name="mini" value="mini">Mini</option>
+                                    <option name="mitsubishi" value="mitsubishi">Mitsubishi</option>
+                                    <option name="nissan" value="nissan">Nissan</option>
+                                    <option name="peugeot" value="peugeot">Peugeot</option>
+                                    <option name="piaggio" value="piaggio">Piaggio</option>
+                                    <option name="porsche" value="porsche">Porsche</option>
+                                    <option name="renault" value="renault">Renault</option>
+                                    <option name="shineray" value="shineray">Shineray</option>
+                                    <option name="seat" value="seat">Seat</option>
+                                    <option name="skoda" value="skoda">Skoda</option>
+                                    <option name="soueast" value="soueast">Soueast</option>
+                                    <option name="ssangyong" value="ssangyong">Ssang Yong</option>
+                                    <option name="subaru" value="subaru">Subaru</option>
+                                    <option name="suzuki" value="suzuki">Suzuki</option>
+                                    <option name="toyota" value="toyota">Toyota</option>
+                                    <option name="volkswagen" value="volkswagen">Volkswagen</option>
+                                    <option name="volvo" value="volvo">Volvo</option>
+                                  </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="otramarca" style="color: white;">¿No esta en lista?</label>
+                                <input type="text" name="otramarca" placeholder="" class="form-control" />
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group" style="color: white;">
+                            <h5>¿Que servicios ofreces?</h5>
+                        </div>
+                        <div class="form-row" style="color: white;">
+                            <div class="col-sm-6">
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iAlineacion" class="form-check-input">
+                                    <label class="form-check-label" for="iAlineacion">
+                                        Alineación y Balanceo
+                                    </label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iCambioBateria" class="form-check-input">
+                                    <label class="form-check-label" for="iCambiBateria">
+                                        Cambio de batería
+                                    </label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iCambioCorrea" class="form-check-input">
+                                    <label class="form-check-label" for="iCambioCorrea">Cambio de correa</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iElectricidad" class="form-check-input">
+                                    <label class="form-check-label" for="iElectricidad">Electricidad general</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iInstalacion" class="form-check-input">
+                                    <label class="form-check-label" for="iInstalacion">Instalación de bodykits</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iPolarizado" class="form-check-input">
+                                    <label class="form-check-label" for="iPolarizado">Polarizado nanoceramico</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iRecubrimiento" class="form-check-input">
+                                    <label class="form-check-label" for="iRecubrimiento">Recubrimiento ceramico</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iReparacion" class="form-check-input">
+                                    <label class="form-check-label" for="iReparacion">Reparación de motores</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iRevisionPre" class="form-check-input">
+                                    <label class="form-check-label" for="iRevisionPre">Revisión preventiva por manual de mantenimiento</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iGrua" class="form-check-input">
+                                    <label class="form-check-label" for="iGrua">Servicio de grua</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iSuspension" class="form-check-input">
+                                    <label class="form-check-label" for="iSuspension">Suspensión</label>
+                                </div>
+                                 <div class="form-check">  
+                                    <input type="checkbox" name="iVentaLlantas" class="form-check-input">
+                                    <label class="form-check-label" for="iVentaLlantas">Venta de llantas</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iVentaLujos" class="form-check-input">
+                                    <label class="form-check-label" for="iVentaLujos">Venta de lujos y Accesorios</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iCambioAceite" class="form-check-input">
+                                    <label class="form-check-label" for="iCambioAceite">Cambio de aceite</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iCambioAceiteDom" class="form-check-input">
+                                    <label class="form-check-label" for="iCambioAceiteDom">Cambio de aceite a domicilio</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iCambioLlantas" class="form-check-input">
+                                    <label class="form-check-label" for="iCambioLlantas">Cambio de llantas</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iElevavidrios" class="form-check-input">
+                                    <label class="form-check-label" for="iElevavidrios">Elevavidrios, chapas y alarmas</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iLatoneria" class="form-check-input">
+                                    <label class="form-check-label" for="iLatoneria">Latoneria con pintura</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iLatoneriaPdr" class="form-check-input">
+                                    <label class="form-check-label" for="iLatoneriaPdr">Latoneria PDR</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iRevision" class="form-check-input">
+                                    <label class="form-check-label" for="iRevision">Revisión de frenos</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iTapiceria" class="form-check-input">
+                                    <label class="form-check-label" for="iTapiceria">Tapiceria / fabricación</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iTapiceriaLava" class="form-check-input">
+                                    <label class="form-check-label" for="iTapiceriaLava">Tapiceria / lavado</label>
+                                </div>
+                                <div class="form-check">  
+                                    <input type="checkbox" name="iOtro" class="form-check-input">
+                                    <label class="form-check-label" for="iOtro">Otro tipo de servicio</label>
+                                    <input type="text" name="otros" placeholder="¿Cual?" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm 12">
+                            <button class="btn btn-success">Guardar</button>
+                        </div>
+                    </form>
+                    <!-- </div> -->
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                  
-                </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                    <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>-->
 
- <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5ec5d87b8ee2956d73a324a1/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5ec5d87b8ee2956d73a324a1/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
 </body>
+
 </html>
